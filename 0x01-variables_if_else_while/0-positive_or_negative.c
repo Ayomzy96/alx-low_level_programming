@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - positve or negative
  *
  * Return: Always 0 (Success)
  */
