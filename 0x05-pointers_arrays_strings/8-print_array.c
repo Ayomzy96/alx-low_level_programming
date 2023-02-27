@@ -1,32 +1,22 @@
-#include <stdio.h>
+#include<stdio.h>
 #include "main.h"
 /**
- *puts_half - update value.
- *@str: value to be evaluate.
+ *print_array - update value.
+ *@a: value to be evaluate.
+ *@n: value to be evaluate.
  *Return: not.
  */
-void puts_half(char *str)
+void print_array(int *a, int n)
 {
-	int len = 0;
-	char *y = str;
-	int n;
+	int x;
 
-	while (*y != '\0')
+	for (x = 0 ; x < n; x++)
 	{
-		y++;
-		len++;
+		printf("%d", a[x]);
+		if (x != n - 1)
+		{
+			printf(", ");
+		}
 	}
-	if (len % 2 == 0)
-	{
-		n = len / 2;
-	}
-	else
-	{
-		n = (len + 1) / 2;
-	}
-	for ( ; n < len ; n++)
-	{
-		_putchar(str[n]);
-	}
-	_putchar('\n');
+	printf("\n");
 }
